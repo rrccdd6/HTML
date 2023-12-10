@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="Página para consulta de diversas funcionalidades." />
+    <meta name="author" content="Ricardo Rodrigues" />
+
+    <title>GRUPO NOVA PEL</title>
+
+    <!-- Estilo slide -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Estilo de Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap" rel="stylesheet" />
+
+    <!-- Estilos divididos -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/cabecalho.css" rel="stylesheet" />
+    <link href="css/rodape.css" rel="stylesheet" />
+    <link href="css/cadastro.css" rel="stylesheet" />
+
+    <!-- Estilo responsivo -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<!-- Cabeçalho -->
+
+<body>
+    <header class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo_box"> <img src="images/pel1.png" alt="Logo empresa segurança patrimonial" /></div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-2">
+                        <li class="nav-item active"> <a class="nav-link" href="painelprincipal.html">Painel de Controle</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Final do Cabeçalho -->
+
+    <!-- Inicio Formulário -->
+    <section class="form-control">
+        <div class="formulario">
+            <form action="" method="post" id="validate">
+                <label>Tipo de consulta</label>
+                <select name="tipodeconsulta" class="p" onchange="adicionaCampo()">
+                    <option>Selecione</option>
+                    <option value="Funcionários">Funcionários</option>
+                    <option value="Férias">Férias</option>
+                    <option value="Horas Extras">Horas Extras</option>
+                    <option value="Folha de Ponto">Folha de Ponto</option>
+                </select>
+                <br>
+                <label id="nomeFuncionarioLabel" style="display:none;">Nome do Funcionário</label>
+                <input id="nomeFuncionarioInput" name="nome" type="text" class="g" style="display:none;">
+                <br>
+                <label id="postoServicoLabel" style="display:none;">Posto de Serviço</label>
+                <select id="postoServicoSelect" style="display:none;">
+                  <option value="Memorial">Memorial</option>
+                  <option value="Marcos Moraes">Marcos Moraes</option>
+                  <option value="Condomínio">Soul Península</option>
+                </select>
+                <br>
+                <label id="mesesLabel" style="display:none;">Mês</label>
+                <select id="mesesSelect" style="display:none;">
+                    <option value="Janeiro">Janeiro</option>
+                    <option value="Fevereiro">Fevereiro</option>
+                    <option value="Março">Março</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Maio">Maio</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Consultar" data-toggle="tooltip" data-placement="top" title="Consultar Férias do posto de serviço">
+            </form>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    
+    <!-- Final Formulário -->
+
+    <!-- Final do Rodapé -->
+    <script src="js/adicionacampo.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+
+</body>
+
+</html>
